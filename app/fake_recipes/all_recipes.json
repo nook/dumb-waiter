@@ -1,0 +1,14 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Baked Oatmeal",
+      "meal": "Breakfast"
+    },
+    {
+  		"id": 2, 
+			"name":"Latte", 
+			"meal": "Beverage"
+		}
+  ]
+}

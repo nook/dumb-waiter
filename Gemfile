@@ -9,4 +9,6 @@ gem 'log_buddy'
 
 group :development do
   gem 'yard'
+  gem 'pry'
+  gem "pry-debugger"
 end
