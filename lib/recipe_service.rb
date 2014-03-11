@@ -13,12 +13,16 @@ class RecipeService
 		private
 			def get_content file
 				content = ""
-				File.open(FILE_PATH + file, "r") do |line|
-					line.each do |l|
-						content << l
-					end
-				end
-				content
+        begin
+          File.open(FILE_PATH + file, "r") do |line|
+            line.each do |l|
+              content << l
+            end
+          end
+        rescue
+          content = '{"error": "404", "message": "Content not found"}'
+        end
+        content
 			end
 	end
 end
